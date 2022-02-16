@@ -8,9 +8,16 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container d-flex justify-content-between">
+    <h3>Simple Airbnb</h3>
+    <a href='/flats/new' class="btn btn-primary">Add a flat</a>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>

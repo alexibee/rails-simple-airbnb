@@ -1,0 +1,15 @@
+<h2>All our flats (<%=@flats.count%>)</h2>
+
+<div class="container w-100">
+  <div class="row row-cols-3">
+    <% @flats.each do |flat| %>
+      <div class="card col mx-n5">
+        <img src="https://picsum.photos/200" class="card-img-top">
+        <h4 class="card-title"><%= flat.name %></h4>
+        <p><%= flat.address %><p>
+        <span><%= flat.price_per_night %></span>
+        <span><%= flat.number_of_guests %></span>
+      </div>
+    <% end %>
+  </div>
+</div>
